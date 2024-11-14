@@ -3,7 +3,7 @@
 GreenLife is an initiative to transform unused urban areas into productive farms that supply fresh food, reduce pollution, and promote green spaces in cities. This project, the GreenLife Urban Agriculture Management System, 
 provides a structured database solution to manage key aspects of urban farms, including farm locations, crop growth, workforce tasks, inventory, and produce distribution.
 Purpose and Objectives
-The GreenLife Urban Agriculture Management System is designed to optimize urban farm operations by tracking resources, workforce assignments, crop lifecycles, and produce distribution. 
+The GreenLife Urban Agricalture Management System is designed to optimize urban farm operations by tracking resources, workforce assignments, crop lifecycles, and produce distribution. 
 The objectives are to improve decision-making, streamline operations, and support sustainable urban agriculture. This database system aligns with GreenLife's mission to promote healthier and greener cities.
 Key Entities and Attributes
 ## 1. Farm Locations
