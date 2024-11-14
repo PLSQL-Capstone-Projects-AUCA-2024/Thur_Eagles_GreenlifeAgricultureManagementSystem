@@ -11,7 +11,7 @@ Key Entities and Attributes
 **Attributes:**
 - Location_ID: Unique ID for each farm.
 - Address: Address of the farm.
-- Type: Type of farm (e.g., rooftop or garden).
+- Type: Type of farm (e.g., rooftop or in garden).
 - Size: Farm size in square meters.
 - Sunlight_Availability: Hours of sunlight available daily.
 - Water_Source: Information about water accessibility at each farm.
