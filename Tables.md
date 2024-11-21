@@ -1,5 +1,6 @@
 ## Table Creation
-``FarmLocations
+```sql
+--FarmLocations
 CREATE TABLE FarmLocations (
     Location_ID NUMBER PRIMARY KEY,
     Address VARCHAR2(100),
@@ -8,7 +9,7 @@ CREATE TABLE FarmLocations (
     Sunlight_Availability NUMBER,
     Water_Sources VARCHAR2(100)
 );
-``Crops
+--Crops
 
 CREATE TABLE Crops (
     Crop_ID NUMBER PRIMARY KEY,
@@ -19,7 +20,7 @@ CREATE TABLE Crops (
     Care_Requirements VARCHAR2(100),
     FOREIGN KEY (Farm_ID) REFERENCES FarmLocations(Location_ID)
 );
-
+--Workforce
 CREATE TABLE Workforce (
     Worker_ID NUMBER PRIMARY KEY,
     Name VARCHAR2(100),
@@ -28,7 +29,7 @@ CREATE TABLE Workforce (
     Hours_Worked NUMBER,
     Special_Skills VARCHAR2(100)
 );
-
+--HarvestRecords
 CREATE TABLE HarvestRecords (
     Harvest_ID NUMBER PRIMARY KEY,
     Crop_ID NUMBER,
@@ -37,7 +38,7 @@ CREATE TABLE HarvestRecords (
     Distribution VARCHAR2(100),
     FOREIGN KEY (Crop_ID) REFERENCES Crops(Crop_ID)
 );
-
+--Inventory
 CREATE TABLE Inventory (
     Resource_ID NUMBER PRIMARY KEY,
     Resource_Type VARCHAR2(50),
