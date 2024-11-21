@@ -9,4 +9,4 @@
 |  RUKESHA Prince         | Princ0e               |                |
 |  Hirwa Paul Divin       |  Div-30               |                |
 |Shyaka Dieu-Merci        |                       |                |
-|Ndayambaje ALEXIS        |                       |                |
+|Ndayambaje ALEXIS        |  Saranda1234          |Project architect|            
