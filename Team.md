@@ -2,7 +2,7 @@
 
 | Contributor             | GitHub Profile Link   | Role            | 
 |-------------------------|-----------------------|---------------- |
-| BATETE Joyce            | Joyce-04              | Project Lead    |
+| BATETE Joyce            | Joyce-04              | Project Leader    |
 | ISHIMWE Alain Pacifique | alainpaccy13          | Repo Maintainer |
 |ISHIMWE Marie Joyeuse    | Ishimwe-Marie-Joyeuse | Data Modeler    |
 | Umuganwa Alice          |  alice-umuganwa       |                 |
