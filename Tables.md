@@ -1,6 +1,6 @@
 ## Table Creation
 ```sql
-## FarmLocations
+--FarmLocations
 CREATE TABLE FarmLocations (
     Location_ID NUMBER PRIMARY KEY,
     Address VARCHAR2(100),
@@ -9,7 +9,7 @@ CREATE TABLE FarmLocations (
     Sunlight_Availability NUMBER,
     Water_Sources VARCHAR2(100)
 );
-## Crops
+``Crops
 
 CREATE TABLE Crops (
     Crop_ID NUMBER PRIMARY KEY,
