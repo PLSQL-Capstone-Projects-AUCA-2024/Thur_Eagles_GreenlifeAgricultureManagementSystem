@@ -7,6 +7,6 @@
 |ISHIMWE Marie Joyeuse    | Ishimwe-Marie-Joyeuse | Data Modeler    |
 | Umuganwa Alice          |  alice-umuganwa       |                 |
 |  RUKESHA Prince         | Princ0e               |Quality Assurance|
-|  Hirwa Paul Divin       |  Div-30               |                 |
+|  Hirwa Paul Divin       |  Div-30               | Process Analyst            |
 |Shyaka Dieu-Merci        |                       |                 |
 |Ndayambaje ALEXIS        |  Saranda1234          |Project architect|            
