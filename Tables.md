@@ -1,7 +1,7 @@
 ## Table Creation
 ### FarmLocations
 ```sql
-CREATE TABLE FarmLocations (
+CREATE TABLE FarmLocations_New (
     Location_ID NUMBER PRIMARY KEY,
     Address VARCHAR2(100),
     Type VARCHAR2(50),
@@ -12,7 +12,7 @@ CREATE TABLE FarmLocations (
 ````
 ### Table Crops
 ```sql
-CREATE TABLE Crops (
+CREATE TABLE Crops2 (
     Crop_ID NUMBER PRIMARY KEY,
     Farm_ID NUMBER,
     Crop_Type VARCHAR2(50),
@@ -35,7 +35,7 @@ CREATE TABLE Workforce (
 ````
 ### Table HarvestRecords
 ```sql
-CREATE TABLE HarvestRecords (
+CREATE TABLE HarvestRecords1 (
     Harvest_ID NUMBER PRIMARY KEY,
     Crop_ID NUMBER,
     Harvest_Date DATE,
@@ -46,7 +46,7 @@ CREATE TABLE HarvestRecords (
 ````
 ### Table Inventory
 ```sql
-CREATE TABLE Inventory (
+CREATE TABLE Inventory1 (
     Resource_ID NUMBER PRIMARY KEY,
     Resource_Type VARCHAR2(50),
     Supplier_Name VARCHAR2(100),
