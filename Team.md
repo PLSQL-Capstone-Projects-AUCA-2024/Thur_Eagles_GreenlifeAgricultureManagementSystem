@@ -1,4 +1,4 @@
-##TEAM AND COLLABORATORS
+# TEAM AND COLLABORATORS
 
 | Contributor             | GitHub Profile Link   | Role           | 
 |-------------------------|-----------------------|----------------|
