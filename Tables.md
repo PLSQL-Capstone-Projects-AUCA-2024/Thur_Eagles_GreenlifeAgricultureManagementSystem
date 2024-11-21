@@ -9,8 +9,8 @@ CREATE TABLE FarmLocations (
     Sunlight_Availability NUMBER,
     Water_Sources VARCHAR2(100)
 );
-### Crops
-```sql
+-- Crops
+
 CREATE TABLE Crops (
     Crop_ID NUMBER PRIMARY KEY,
     Farm_ID NUMBER,
