@@ -9,8 +9,9 @@ CREATE TABLE FarmLocations (
     Sunlight_Availability NUMBER,
     Water_Sources VARCHAR2(100)
 );
--- Crops
-
+````
+### Table Crops
+```sql
 CREATE TABLE Crops (
     Crop_ID NUMBER PRIMARY KEY,
     Farm_ID NUMBER,
@@ -20,7 +21,9 @@ CREATE TABLE Crops (
     Care_Requirements VARCHAR2(100),
     FOREIGN KEY (Farm_ID) REFERENCES FarmLocations(Location_ID)
 );
---Workforce
+````
+## Table Workforce
+```sql
 CREATE TABLE Workforce (
     Worker_ID NUMBER PRIMARY KEY,
     Name VARCHAR2(100),
@@ -29,7 +32,9 @@ CREATE TABLE Workforce (
     Hours_Worked NUMBER,
     Special_Skills VARCHAR2(100)
 );
---HarvestRecords
+````
+### Table HarvestRecords
+```sql
 CREATE TABLE HarvestRecords (
     Harvest_ID NUMBER PRIMARY KEY,
     Crop_ID NUMBER,
@@ -38,7 +43,9 @@ CREATE TABLE HarvestRecords (
     Distribution VARCHAR2(100),
     FOREIGN KEY (Crop_ID) REFERENCES Crops(Crop_ID)
 );
---Inventory
+````
+### Table Inventory
+```sql
 CREATE TABLE Inventory (
     Resource_ID NUMBER PRIMARY KEY,
     Resource_Type VARCHAR2(50),
@@ -46,3 +53,4 @@ CREATE TABLE Inventory (
     Cost NUMBER,
     Quantity NUMBER
 );
+````
