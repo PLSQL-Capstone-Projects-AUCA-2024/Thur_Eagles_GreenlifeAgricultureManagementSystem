@@ -10,4 +10,3 @@ TEAM AND COLLABORATORS
 |  Hirwa Paul Divin       |  Div-30               |                |
 |Shyaka Dieu-Merci        |                       |                |
 |Ndayambaje ALEXIS        |                       |                |
-|-------------------------|-----------------------|----------------|
