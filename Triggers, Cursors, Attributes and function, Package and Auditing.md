@@ -21,7 +21,7 @@ END;
 #### Audit Logging: Tracks changes for accountability.
 #### Advantages: Reduces manual intervention and enforces data consistency.
 ## 2. Cursors
-#### Cursor to Assign Tasks to Workers
+### Cursor to Assign Tasks to Workers
 #### This cursor assigns specific tasks to available workers based on their roles.
 ```sql
 DECLARE
