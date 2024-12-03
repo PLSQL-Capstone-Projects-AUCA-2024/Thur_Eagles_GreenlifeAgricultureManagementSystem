@@ -1,6 +1,6 @@
 ## 1. Triggers
 ### Trigger to Update Inventory After Harvest
-### This trigger ensures inventory (like fertilizers or tools) is automatically updated when a harvest record is inserted.
+#### This trigger ensures inventory (like fertilizers or tools) is automatically updated when a harvest record is inserted.
 ```sql
 CREATE OR REPLACE TRIGGER UpdateInventoryAfterHarvest
 AFTER INSERT ON HarvestRecords
@@ -17,12 +17,12 @@ BEGIN
 END;
 /
 ````
-### Purpose: Automates the reduction of inventory after a harvest, ensuring real-time updates.
-### Audit Logging: Tracks changes for accountability.
-### Advantages: Reduces manual intervention and enforces data consistency.
+#### Purpose: Automates the reduction of inventory after a harvest, ensuring real-time updates.
+#### Audit Logging: Tracks changes for accountability.
+#### Advantages: Reduces manual intervention and enforces data consistency.
 ## 2. Cursors
-### Cursor to Assign Tasks to Workers
-### This cursor assigns specific tasks to available workers based on their roles.
+#### Cursor to Assign Tasks to Workers
+#### This cursor assigns specific tasks to available workers based on their roles.
 ```sql
 DECLARE
     CURSOR assign_cursor IS
@@ -46,13 +46,13 @@ BEGIN
 END;
 /
 ````
-### Purpose: Automates task assignment to reduce manual effort.
-### Dynamic Tasking: Adapts assignments based on worker roles.
-### Debugging: Outputs assignments for verification.
+#### Purpose: Automates task assignment to reduce manual effort.
+#### Dynamic Tasking: Adapts assignments based on worker roles.
+#### Debugging: Outputs assignments for verification.
 
 ## 3. Attributes and Functions
-### Function to Calculate Total Yield for a Farm
-### This function calculates the total produce harvested from a specific farm.
+#### Function to Calculate Total Yield for a Farm
+#### This function calculates the total produce harvested from a specific farm.
 ```sql
 CREATE OR REPLACE FUNCTION CalculateTotalYield(farm_id IN FarmLocations.Location_ID%TYPE)
 RETURN NUMBER IS
@@ -72,12 +72,12 @@ END;
 ```sql
 SELECT CalculateTotalYield(1) AS TotalYield FROM DUAL;
 ````
-### Purpose: Provides a quick summary of total yields for analysis.
-### Dynamic Typing: Uses %TYPE for flexibility.
-### Reusability: Encapsulates logic, making it reusable across the application.
+#### Purpose: Provides a quick summary of total yields for analysis.
+#### Dynamic Typing: Uses %TYPE for flexibility.
+#### Reusability: Encapsulates logic, making it reusable across the application.
 ## 4. Packages
 ### Farm Management Package
-### This package groups related procedures and functions for better organization.
+#### This package groups related procedures and functions for better organization.
 
 ### Package Specification:
 ```sql
@@ -114,13 +114,12 @@ CREATE OR REPLACE PACKAGE BODY FarmManagement AS
 END FarmManagement;
 /
 ````
-### Encapsulation: Groups related logic to improve readability and security.
-### Reusability: Procedures and functions can be reused across multiple modules.
-### Modularity: Simplifies debugging and maintenance.
+#### Encapsulation: Groups related logic to improve readability and security.
+#### Reusability: Procedures and functions can be reused across multiple modules.
+#### Modularity: Simplifies debugging and maintenance.
 
 ## 5. Auditing
-### Auditing Changes to Workforce Table
-### This trigger logs changes to the Workforce table, including updates and deletions.
+##### This trigger logs changes to the Workforce table, including updates and deletions.
 ```sql
 CREATE OR REPLACE TRIGGER WorkforceAudit
 AFTER UPDATE OR DELETE ON Workforce
@@ -136,12 +135,12 @@ BEGIN
 END;
 /
 ````
-### Purpose: Tracks changes to ensure accountability and compliance.
-### Detailed Logging: Records the exact action and affected record.
-### Security: Helps monitor unauthorized changes.
+#### Purpose: Tracks changes to ensure accountability and compliance.
+#### Detailed Logging: Records the exact action and affected record.
+#### Security: Helps monitor unauthorized changes.
 ## Conclusion
-### Triggers: Automate workflows and enforce rules without user intervention.
-### Cursors: Handle row-by-row operations efficiently.
-### Functions: Encapsulate logic for calculations and improve modularity.
-### Packages: Enhance code organization, reusability, and security.
-### Auditing: Ensure data integrity and accountability through change tracking.
+#### Triggers: Automate workflows and enforce rules without user intervention.
+#### Cursors: Handle row-by-row operations efficiently.
+#### Functions: Encapsulate logic for calculations and improve modularity.
+#### Packages: Enhance code organization, reusability, and security.
+#### Auditing: Ensure data integrity and accountability through change tracking.
